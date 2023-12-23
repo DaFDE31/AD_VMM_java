@@ -112,14 +112,3 @@ After completion, your program is to report the following statistics:
 
 Since the logical addresses in **addresses.txt** were generated randomly and do not reflect any memory access locality, do not expect to have a high TLB hit rate.
 
-## Submission Requirements
-
-Click the <span style="background-color:green;color:white;">Use as template</span> button to copy the repo to your GitHub account and **clone** your repo on **your VM**. You should commit your code as you work on your program and push it systematically to your repo.  **Your finalized product should be on your Github repo**.
-
-<p style="color:purple">Your submission must include a makefile that creates the executable by default (i.e. when make is run on the command line without any arguments).  It should also include a clean command that cleans all .o and executable files.</p>
-
-After completing your work, submit your Github repo link on Blackboard. Your repo should show no submissions after the submission deadline. Any submissions after the deadline will result in an immediate zero (0) on the assignment. If your **program does not compile, you will receive a zero (0) on the assignment**. A rubric is provided with the project on Blackboard.
-
-
-
-
