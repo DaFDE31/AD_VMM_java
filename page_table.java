@@ -3,10 +3,18 @@ public class page_table {
 
     public page_table(){
         table = new entry[256];
+        for (int index = 0; index < table.length; index++) {
+            table[index] = new entry();
+        }
     }
+
+    public entry getTable(int index) {
+        return table[index];
+    }
+
     public int table_lookup(int page_number){
         if (table[page_number].getValid() == 0)
-            return -1;
+            return -1; //page fault
         else{
             return table[page_number].getFrame_number();
         }
