@@ -1,3 +1,7 @@
+package VMM;
+
+import VMM.entry;
+
 public class page_table {
     private entry[] table;
 

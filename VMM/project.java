@@ -1,5 +1,7 @@
+package VMM;
+
 public interface project {
-    //Struct for an entry in the page table
+    //Struct for an VMM.entry in the page table
 
 
 
@@ -8,7 +10,7 @@ public interface project {
 
     void page_update(int page); //grabs a value from the backing store and puts it in the page table
 
-    int page_search(int page);//Should be changed to return a value to the TLB
+    int page_search(int page);//Should be changed to return a value to the VMM.TLB
 
     public void PMget(int frame, int offset);
 

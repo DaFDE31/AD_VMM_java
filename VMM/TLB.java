@@ -1,3 +1,5 @@
+package VMM;
+
 public class TLB {
     private TLB_entry[] TLB_table;
     private int index = 0;

@@ -1,3 +1,5 @@
+package VMM;
+
 public class TLB_entry {
     private int page;
     private int frame;

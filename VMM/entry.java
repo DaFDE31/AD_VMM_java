@@ -1,3 +1,5 @@
+package VMM;
+
 public class entry {
     private int frame_number = -1;
     private int valid;
