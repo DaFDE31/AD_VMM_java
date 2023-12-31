@@ -8,6 +8,7 @@ public class TLB_hash {
         pages = new int[16];
     }
     public int TLB_search(int page){
+        
         if (TLB.get(page) == null){
             return -1;
         }
