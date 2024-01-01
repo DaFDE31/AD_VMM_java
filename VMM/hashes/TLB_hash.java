@@ -14,6 +14,5 @@ public class TLB_hash {
         }
         return TLB.get(page);
     }
-//HAHAHAHAHAHAHAHAHAHAH
 
 }
