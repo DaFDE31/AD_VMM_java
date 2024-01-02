@@ -31,18 +31,18 @@ public class run {
                 int page_result = page_test.table_lookup(page_num);
                 if (page_result == -1){ //page fault
                     //THIS WILL BE PHYSICAL MEMORY
-                    int newFrame = page_num%10;
+                    int newFrame = hard.grab(page_num, offset);
                     page_test.table_update(page_num, newFrame);
                     translator.TLB_update(page_num, newFrame);
                     System.out.print(" page fault");
                 }
                 else{// page hit
                     translator.TLB_update(page_num, page_result);
-                    System.out.println(page_result);
+                    System.out.println(" Frame: "+ page_result);
                 }
             }
             else{// TLB hit
-                System.out.println(TLB_result);
+                System.out.println(" Frame: "+ TLB_result);
             }
 
 

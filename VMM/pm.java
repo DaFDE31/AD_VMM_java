@@ -6,8 +6,10 @@ public class pm {
         physical = new Integer[256*256];
 
         //For testing
+        int num = 256*256-1;
         for (int bite = 0; bite < 256*256; bite++){
-            physical[bite] = bite;
+            physical[bite] =  num;
+            num--;
         }
         /////////////////////
     }
