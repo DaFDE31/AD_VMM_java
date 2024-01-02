@@ -16,6 +16,7 @@ public class run {
 
         page_table page_test = new page_table();
         TLB translator = new TLB();
+        pm hard = new pm();
         //Initializes the page table and TLB
 
         while(scan.hasNextLine()){
