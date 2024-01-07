@@ -34,14 +34,17 @@ public class run {
                     int newFrame = hard.update(page_num);
                     page_test.table_update(page_num, newFrame);
                     translator.TLB_update(page_num, newFrame);
+                    TLB_result = newFrame;
                     System.out.print(" page fault");
                 }
                 else{// page hit
                     translator.TLB_update(page_num, page_result);
+                    TLB_result = page_result;
                     System.out.println(" Frame: "+ page_result);
                 }
             }
             else{// TLB hit
+                //System.out.print(" HIT: "+ hard.grab(TLB_result, offset));
                 System.out.println(" Frame: "+ TLB_result);
             }
 
@@ -49,6 +52,7 @@ public class run {
             //System.out.println(page_result);
 
             i++;
+            System.out.printf("\nADDRESS: (%d,%d) %d,%d,%d", page_num, offset, address, TLB_result*256+offset, hard.grab(TLB_result, offset));
             System.out.println();
         }
         //hard.print();
@@ -62,7 +66,5 @@ public class run {
         }
 
          */
-
-
     }
 }

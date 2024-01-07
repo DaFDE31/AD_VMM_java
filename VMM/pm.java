@@ -40,14 +40,14 @@ public class pm {
         }
         frameNum++;//updates the frame number for the next update
 
-
         return frameNum-1;//returns that frame number into the page table
 
     }
-    public void print(){
+    /*public void print(){
         for (Integer hi : physical){
             System.out.println("hello: "+ hi);
         }
     }
+     */
 
 }
