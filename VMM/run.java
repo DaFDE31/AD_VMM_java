@@ -31,7 +31,7 @@ public class run {
                 int page_result = page_test.table_lookup(page_num);
                 if (page_result == -1){ //page fault
                     //THIS WILL BE PHYSICAL MEMORY
-                    int newFrame = hard.grab(page_num, offset);
+                    int newFrame = hard.update(page_num);
                     page_test.table_update(page_num, newFrame);
                     translator.TLB_update(page_num, newFrame);
                     System.out.print(" page fault");
@@ -51,6 +51,7 @@ public class run {
             i++;
             System.out.println();
         }
+        //hard.print();
 
 
         /*
