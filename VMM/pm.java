@@ -1,8 +1,14 @@
 package VMM;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class pm {
     private Integer[] physical;
-    public pm(){
+
+    FileInputStream binary;
+    public pm() throws IOException{
+        binary = new FileInputStream("/Users/dadjocy21students.desu.edu/Desktop/dev-me/AD_VMM_java/BACKING_STORE.bin");
         physical = new Integer[256*256];
 
         //For testing

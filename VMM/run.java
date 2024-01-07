@@ -20,7 +20,7 @@ public class run {
         //Initializes the page table and TLB
 
         while(scan.hasNextLine()){
-            int address = Integer.valueOf(scan.nextLine()); // takes each individual address
+            int address = scan.nextInt();// takes each individual address
             int page_num = (address >> 8) & 0x00FF;
             int offset = address & 0x00FF;
 
