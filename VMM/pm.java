@@ -9,7 +9,7 @@ public class pm {
     private byte[] binary = new byte[256*256];
     FileInputStream file;
     public pm() throws IOException{
-        file = new FileInputStream("/Users/dadjocy21students.desu.edu/Desktop/dev-me/AD_VMM_java/BACKING_STORE.bin");
+        file = new FileInputStream("BACKING_STORE.bin");
         physical = new Integer[256*256];
 
         file.read(binary);

@@ -9,7 +9,7 @@ public class run {
 
 
     public static void main(String[] args) throws Exception {
-        File addresses = new File("/Users/dadjocy21students.desu.edu/Desktop/dev-me/AD_VMM_java/addresses.txt");
+        File addresses = new File("addresses.txt");
         Scanner scan = new Scanner(addresses);
         //These two lines read the address file
 
