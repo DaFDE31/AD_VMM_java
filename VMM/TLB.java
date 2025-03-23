@@ -12,12 +12,8 @@ public class TLB {
 
     public void TLB_update(int page, int frame){
         TLB_table[index].update(page, frame);
-        if (index <15){
-            index++;
-        }
-        else{
-            index = 0;
-        }
+        index++;
+        index = index % 16;
     }
     public int TLB_search(int page){
         for (TLB_entry subject : TLB_table){
